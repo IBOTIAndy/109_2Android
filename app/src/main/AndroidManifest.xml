@@ -9,6 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.105590006_HW">
+        <activity android:name=".helloToast">
+
+            android:label = "Hello Toast Activity"
+            android:parentActivityName=".MainActivity"> ？父母Activity
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.bot.t105590006_hw.MainActivity" /> ？指定父母Activity對象
+        </activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
