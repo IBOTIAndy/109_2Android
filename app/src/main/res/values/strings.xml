@@ -1,8 +1,47 @@
 <resources>
-    <string name="app_name">Hello Constraint_105590006HW2</string>
+    <string name="app_name">Scroll_and_2Activities_105590006HW3</string>
     <string name="button_label_toast">Toast</string>
+    <string name="button_say_hello">Say Hello</string>
     <string name="button_label_zero">Zero</string>
     <string name="button_label_count">Count</string>
     <string name="count_initial_value">0</string>
     <string name="toast_message">Hello Toast!</string>
+    <string name="scroll_header">Scrolling Text_A writings</string>
+
+    <string name="writings_title">The HW03:\n<br />Text and scrolling views.</string>
+    <string name="writings_data">this is a apple.\n<br />
+        Test url: www.youtube.com \n<br />
+        \n<br />
+    Open the ScrollingText2 app that you created in the Working with TextView Elements lesson.\n<br />
+\n<br />
+    Change the subheading so that it wraps within a column on the left that is 100 dp wide, as shown below.\n<br />
+    Place the text of the article to the right of the subheading as shown below.\n<br />
+        \n<br />
+        Answer these questions\n<br />
+Question 1\n<br />
+How many views can you use within a ScrollView? Choose one:\n<br />
+    One view only\n<br />
+    One view or one view group\n<br />
+    As many as you need\n<br />
+\n<br />
+Question 2\n<br />
+Which XML attribute do you use in a LinearLayout to show views side by side? Choose one:\n<br />
+    android:orientation="horizontal"\n<br />
+    android:orientation="vertical"\n<br />
+    android:layout_width="wrap_content"\n<br />
+\n<br />
+Question 3\n<br />
+Which XML attribute do you use to define the width of the LinearLayout inside the scrolling view? Choose one:\n<br />
+    android:layout_width="wrap_content"\n<br />
+    android:layout_width="match_parent"\n<br />
+    android:layout_width="200dp"\n<br />
+\n<br />
+Submit your app for grading\n<br />
+Guidance for graders\n<br />
+Check that the app has the following features:\n<br />
+    The layout shows the subheading in the left column and the article text in the right column, as shown in the above figure.\n<br />
+    The ScrollView includes a LinearLayout with two TextView elements.\n<br />
+    The LinearLayout orientation is set to horizontal.\n<br />
+
+</string>
 </resources>
