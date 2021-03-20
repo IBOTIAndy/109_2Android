@@ -7,68 +7,44 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/show_count"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="4dp"
-        android:layout_marginBottom="4dp"
+        android:id="@+id/main_tview_count"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
         android:background="#FFC107"
         android:gravity="center_vertical"
         android:text="@string/count_initial_value"
         android:textAlignment="center"
         android:textColor="#EF0000"
-        android:textSize="160sp"
+        android:textSize="36sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintBottom_toTopOf="@+id/main_edit_text"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toEndOf="@+id/button_zero"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.502" />
-
-    <Button
-        android:id="@+id/button_say_hello"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:backgroundTint="@color/bule"
-        android:onClick="showToast"
-        android:text="@string/button_label_toast"
-        app:layout_constraintBottom_toTopOf="@+id/button_zero"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button_zero"
+        android:id="@+id/main_button_count"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:backgroundTint="@color/darker_gray"
-        android:onClick="resetCount"
-        android:text="@string/button_label_zero"
-        app:layout_constraintBottom_toTopOf="@+id/button_count"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_say_hello" />
-
-    <Button
-        android:id="@+id/button_count"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
         android:backgroundTint="@color/bule"
         android:onClick="addCount"
         android:text="@string/button_label_count"
-        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintBottom_toTopOf="@+id/main_edit_text"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_zero" />
+        app:layout_constraintTop_toBottomOf="@+id/main_tview_count" />
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline3"
+    <EditText
+        android:id="@+id/main_edit_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="300dp" />
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

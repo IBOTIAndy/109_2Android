@@ -19,10 +19,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        mShowCount = (TextView) findViewById(R.id.show_count);
-        zeroButton = findViewById(R.id.button_zero);
-        countButton = findViewById(R.id.button_count);
-        zeroButton.setBackgroundColor(getResources().getColor(R.color.darker_gray));
+        mShowCount = (TextView) findViewById(R.id.main_tview_count);
+//        zeroButton = findViewById(R.id.button_zero);
+        countButton = findViewById(R.id.main_button_count);
+//        zeroButton.setBackgroundColor(getResources().getColor(R.color.darker_gray));
 
 
         Log.i("MainActivity", "This is 109_2HW1 log statement. MainActivity layout is complete.");
@@ -52,7 +52,9 @@ public class MainActivity extends AppCompatActivity {
         ++mCount;
         if (mShowCount != null) {
             mShowCount.setText(Integer.toString(mCount));
-            zeroButton.setBackgroundColor(getResources().getColor(R.color.purple_500));
+            if(zeroButton != null) {
+                zeroButton.setBackgroundColor(getResources().getColor(R.color.purple_500));
+            }
             cheekText();
         }
     }
