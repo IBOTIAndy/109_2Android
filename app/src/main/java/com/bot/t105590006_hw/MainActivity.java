@@ -17,8 +17,7 @@ public class MainActivity extends AppCompatActivity {
     private static final String LOG_TAG = "Activity";
     private int mCount=0;
     private TextView mShowCount;
-    private EditText mEditText;
-    private View zeroButton;
+    //private View zeroButton;
     private View countButton;
     private EditText mWebsiteEditText;
     private EditText mLocationEditText;
@@ -31,7 +30,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mShowCount = (TextView) findViewById(R.id.main_tview_count);
-        mEditText = findViewById(R.id.main_edit_text);
 //        zeroButton = findViewById(R.id.button_zero);
         countButton = findViewById(R.id.main_button_count);
 //        zeroButton.setBackgroundColor(getResources().getColor(R.color.darker_gray));
@@ -110,9 +108,9 @@ public class MainActivity extends AppCompatActivity {
         ++mCount;
         if (mShowCount != null) {
             mShowCount.setText(Integer.toString(mCount));
-            if(zeroButton != null) {
-                zeroButton.setBackgroundColor(getResources().getColor(R.color.purple_500));
-            }
+//            if(zeroButton != null) {
+//                zeroButton.setBackgroundColor(getResources().getColor(R.color.purple_500));
+//            }
             cheekText();
         }
     }
