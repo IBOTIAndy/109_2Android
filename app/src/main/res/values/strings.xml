@@ -7,6 +7,7 @@
     <string name="count_initial_value">0</string>
     <string name="toast_message">Hello Toast!</string>
     <string name="scroll_header">Scrolling Text_A writings</string>
+    <string name="button_jump_hw04">hw04</string>
     <!--Implicit intents-->
     <string name="header2">Implicit intents</string>
     <string name="editText_uri">http://developer.android.com</string>
@@ -17,6 +18,16 @@
     <string name="button_share">Share This Text</string>
     <string name="button_cam">Take a picture</string>
     <!--Implicit intents end-->
+    <!-- HW04 -->
+    <string name="type_operand_one_hint">Type Operand 1</string>
+    <string name="type_operand_two_hint">Type Operand 2</string>
+    <string name="add_operation_text">Add</string>
+    <string name="sub_operation_text">Sub</string>
+    <string name="div_operation_text">Div</string>
+    <string name="mul_operation_text">Mul</string>
+    <string name="pow_operation_text">Pow</string>
+    <string name="computationError">Error</string>
+    <!-- HW04 end -->
 
 
     <string name="writings_title">The HW03:\n<br />Text and scrolling views.</string>
