@@ -36,6 +36,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/main_tview_count" />
 
+    <Button
+        android:id="@+id/main_button_hw04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/bule"
+        android:onClick="toHW04"
+        android:text="@string/button_jump_hw04"
+        app:layout_constraintEnd_toStartOf="@+id/main_button_count"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_tview_count" />
+
     <EditText
         android:id="@+id/main_edit_text"
         android:layout_width="wrap_content"

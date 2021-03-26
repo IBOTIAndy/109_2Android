@@ -104,6 +104,20 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    public void toHW04(View view){
+        Intent intent = new Intent(this, Homework04.class); //指定要切換的activity給intent
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);
+        }
+        else {
+            Log.d("OpenHomework", "Can't open HW04!");
+        }
+//        Bundle bundle = new Bundle(); //使用bundle來傳遞資料
+//        bundle.putString("count", Integer.toString(mCount)); //將count數字存入bundle內
+//        intent.putExtras(bundle); //將bundle包進intent
+//        startActivity(intent); //啟動intent建立Activity
+    }
+
     public void addCount(View view){
         ++mCount;
         if (mShowCount != null) {
