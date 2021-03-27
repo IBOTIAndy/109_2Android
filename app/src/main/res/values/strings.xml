@@ -18,7 +18,7 @@
     <string name="button_share">Share This Text</string>
     <string name="button_cam">Take a picture</string>
     <!--Implicit intents end-->
-    <!-- HW04 -->
+    <!-- HW05 -->
     <string name="type_operand_one_hint">Type Operand 1</string>
     <string name="type_operand_two_hint">Type Operand 2</string>
     <string name="add_operation_text">Add</string>
@@ -27,7 +27,7 @@
     <string name="mul_operation_text">Mul</string>
     <string name="pow_operation_text">Pow</string>
     <string name="computationError">Error</string>
-    <!-- HW04 end -->
+    <!-- HW05 end -->
 
 
     <string name="writings_title">The HW03:\n<br />Text and scrolling views.</string>

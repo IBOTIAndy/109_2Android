@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.105590006_HW">
         <activity android:name=".Homework05">
-            android:label = "Homework04 Activity"
+            android:label = "Homework05 Activity"
             android:parentActivityName=".MainActivity"> ？父母Activity
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
