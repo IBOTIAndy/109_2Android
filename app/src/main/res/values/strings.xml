@@ -7,7 +7,7 @@
     <string name="count_initial_value">0</string>
     <string name="toast_message">Hello Toast!</string>
     <string name="scroll_header">Scrolling Text_A writings</string>
-    <string name="button_jump_hw04">hw04</string>
+    <string name="button_jump_hw05">hw05</string>
     <!--Implicit intents-->
     <string name="header2">Implicit intents</string>
     <string name="editText_uri">http://developer.android.com</string>
@@ -27,6 +27,15 @@
     <string name="mul_operation_text">Mul</string>
     <string name="pow_operation_text">Pow</string>
     <string name="computationError">Error</string>
+    <!--Clickable images-->
+    <string name="title_clickable_images">Droid Desserts</string>
+    <string name="image_donuts">Donuts are glazed and sprinkled with candy.</string>
+    <string name="image_ice_cream_sandwiches">Ice cream sandwiches have chocolate wafers and vanilla filling.</string>
+    <string name="image_froyo">FroYo is premium self-serve frozen yogurt.</string>
+    <string name="donut_order_message">You ordered a donut.</string>
+    <string name="ice_cream_order_message">You ordered an ice cream sandwich.</string>
+    <string name="froyo_order_message">You ordered a FroYo.</string>
+
     <!-- HW05 end -->
 
 

@@ -103,7 +103,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void toHW04(View view){
+    public void toHW05(View view){
         Intent intent = new Intent(this, Homework05.class); //指定要切換的activity給intent
         if (intent.resolveActivity(getPackageManager()) != null) {
             startActivity(intent);

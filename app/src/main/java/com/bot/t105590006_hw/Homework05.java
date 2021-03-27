@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 /**
  * SimpleCalcTest is the final version of SimpleCalc.  It adds:
@@ -137,4 +138,40 @@ public class Homework05 extends Activity {
         }
         return operandText;
     }
+
+    /**
+     * ===================================================
+     * 04.1: Clickable images
+     */
+    public void displayToast(String message) {
+        Toast.makeText(getApplicationContext(), message,
+                Toast.LENGTH_SHORT).show();
+    }
+
+    /**
+     * Shows a message that the donut image was clicked.
+     */
+    public void showDonutOrder(View view) {
+        displayToast(getString(R.string.donut_order_message));
+    }
+    /**
+     * Shows a message that the ice cream sandwich image was clicked.
+     */
+    public void showIceCreamOrder(View view) {
+        displayToast(getString(R.string.ice_cream_order_message));
+    }
+
+    /**
+     * Shows a message that the froyo image was clicked.
+     */
+    public void showFroyoOrder(View view) {
+        displayToast(getString(R.string.froyo_order_message));
+    }
+
+    public void showShoppingCar(View view) {
+        displayToast("car say hi.");
+    }
+
+
+
 }

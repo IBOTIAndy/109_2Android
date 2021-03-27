@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.105590006_HW">
-        <activity android:name=".Homework05">
+        <activity android:name=".Homework05"
+            android:label="HW05: Unit tests and Clickable images">
             android:label = "Homework05 Activity"
             android:parentActivityName=".MainActivity"> ？父母Activity
             <meta-data
