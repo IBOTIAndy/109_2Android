@@ -11,7 +11,6 @@ import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     private static final String LOG_TAG = "Activity";
@@ -105,7 +104,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void toHW04(View view){
-        Intent intent = new Intent(this, Homework04.class); //指定要切換的activity給intent
+        Intent intent = new Intent(this, Homework05.class); //指定要切換的activity給intent
         if (intent.resolveActivity(getPackageManager()) != null) {
             startActivity(intent);
         }

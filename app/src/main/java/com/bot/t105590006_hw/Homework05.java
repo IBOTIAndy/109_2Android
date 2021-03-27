@@ -15,7 +15,7 @@ import android.widget.TextView;
  * - Input validation (no input, bad number format, div by zero)
  * - Local unit testing for various cases
  */
-public class Homework04 extends Activity {
+public class Homework05 extends Activity {
 
     private static final String TAG = "CalculatorActivity";
 
@@ -29,7 +29,7 @@ public class Homework04 extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_homework04);
+        setContentView(R.layout.activity_homework05);
 
         // Initialize the calculator class and all the views.
         mCalculator = new Calculator();
