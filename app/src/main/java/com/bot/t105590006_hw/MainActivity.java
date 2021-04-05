@@ -11,7 +11,6 @@ import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     private static final String LOG_TAG = "Activity";
@@ -102,6 +101,20 @@ public class MainActivity extends AppCompatActivity {
         else {
             Log.d("ImplicitIntents", "Can't open cam intent!");
         }
+    }
+
+    public void toHW05(View view){
+        Intent intent = new Intent(this, Homework05.class); //指定要切換的activity給intent
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);
+        }
+        else {
+            Log.d("OpenHomework", "Can't open HW04!");
+        }
+//        Bundle bundle = new Bundle(); //使用bundle來傳遞資料
+//        bundle.putString("count", Integer.toString(mCount)); //將count數字存入bundle內
+//        intent.putExtras(bundle); //將bundle包進intent
+//        startActivity(intent); //啟動intent建立Activity
     }
 
     public void addCount(View view){
