@@ -1,13 +1,24 @@
 <resources>
-    <string name="app_name">105590006_HW5</string>
-    <string name="button_label_toast">Toast</string>
-    <string name="button_say_hello">Say Hello</string>
-    <string name="button_label_zero">Zero</string>
-    <string name="button_label_count">Count</string>
-    <string name="count_initial_value">0</string>
-    <string name="toast_message">Hello Toast!</string>
-    <string name="scroll_header">Scrolling Text_A writings</string>
+    <string name="app_name">105590006_HW</string>
+    <!--main-->
+    <string name="main_titel">Choose a Homework</string>
+    <string name="button_jump_hw01">hw01</string>
+    <string name="button_jump_hw02">hw02</string>
+    <string name="button_jump_hw03">hw03</string>
+    <string name="button_jump_hw04">hw04</string>
     <string name="button_jump_hw05">hw05</string>
+    <!--main end-->
+
+    <!--hw01-->
+    <!--hw01 end-->
+
+    <!--hw02-->
+    <!--hw02 end-->
+
+    <!--hw03-->
+    <!--hw03 end-->
+
+    <!--hw04-->
     <!--Implicit intents-->
     <string name="header2">Implicit intents</string>
     <string name="editText_uri">http://developer.android.com</string>
@@ -18,6 +29,15 @@
     <string name="button_share">Share This Text</string>
     <string name="button_cam">Take a picture</string>
     <!--Implicit intents end-->
+    <!--hw04 end-->
+
+    <string name="button_label_toast">Toast</string>
+    <string name="button_say_hello">Say Hello</string>
+    <string name="button_label_zero">Zero</string>
+    <string name="button_label_count">Count</string>
+    <string name="count_initial_value">0</string>
+    <string name="toast_message">Hello Toast!</string>
+    <string name="scroll_header">Scrolling Text_A writings</string>
     <!-- HW05 -->
     <string name="type_operand_one_hint">Type Operand 1</string>
     <string name="type_operand_two_hint">Type Operand 2</string>

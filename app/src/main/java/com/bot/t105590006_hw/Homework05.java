@@ -2,7 +2,7 @@ package com.bot.t105590006_hw;
 
 /*this is copy form Android fundamentals 03.2: Unit tests*/
 
-import android.app.Activity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
@@ -16,15 +16,12 @@ import android.widget.Toast;
  * - Input validation (no input, bad number format, div by zero)
  * - Local unit testing for various cases
  */
-public class Homework05 extends Activity {
+public class Homework05 extends AppCompatActivity {
 
     private static final String TAG = "CalculatorActivity";
-
     private Calculator mCalculator;
-
     private EditText mOperandOneEditText;
     private EditText mOperandTwoEditText;
-
     private TextView mResultTextView;
 
     @Override
@@ -37,6 +34,11 @@ public class Homework05 extends Activity {
         mResultTextView = findViewById(R.id.operation_result_text_view);
         mOperandOneEditText = findViewById(R.id.operand_one_edit_text);
         mOperandTwoEditText = findViewById(R.id.operand_two_edit_text);
+    }
+
+    public void onSaveInstanceState(Bundle outState) {
+        Log.d("HW04_Activity", "This is 109_2HW04 log statement. Bundle");
+        super.onSaveInstanceState(outState);
     }
 
     /**
