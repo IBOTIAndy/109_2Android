@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     private static final String LOG_TAG = "Activity";
@@ -33,6 +34,44 @@ public class MainActivity extends AppCompatActivity {
 //        outState.putString("textViewCount", mShowCount.getText().toString());
     }
 
+    private void showToast_toHW(String needWhat){
+        Toast toast = Toast.makeText(this, "whating to creat \"" + needWhat + "\".", Toast.LENGTH_SHORT);
+        toast.show();
+    }
+
+    public void toHW01(View view) {
+        showToast_toHW("toHW01");
+//        Intent intent = new Intent(this, Homework01.class); //指定要切換的activity給intent
+//        if (intent.resolveActivity(getPackageManager()) != null) {
+//            startActivity(intent);
+//        } else {
+//            Log.d("OpenHomework", "Can't open HW04!");
+//        }
+    }
+
+
+    public void toHW02(View view) {
+        showToast_toHW("toHW02");
+//        Intent intent = new Intent(this, Homework02.class); //指定要切換的activity給intent
+//        if (intent.resolveActivity(getPackageManager()) != null) {
+//            startActivity(intent);
+//        } else {
+//            Log.d("OpenHomework", "Can't open HW04!");
+//        }
+    }
+
+
+    public void toHW03(View view) {
+        showToast_toHW("toHW03");
+//        Intent intent = new Intent(this, Homework03.class); //指定要切換的activity給intent
+//        if (intent.resolveActivity(getPackageManager()) != null) {
+//            startActivity(intent);
+//        } else {
+//            Log.d("OpenHomework", "Can't open HW04!");
+//        }
+    }
+
+
     public void toHW04(View view) {
         Intent intent = new Intent(this, Homework04.class); //指定要切換的activity給intent
         if (intent.resolveActivity(getPackageManager()) != null) {
@@ -46,8 +85,7 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, Homework05.class); //指定要切換的activity給intent
         if (intent.resolveActivity(getPackageManager()) != null) {
             startActivity(intent);
-        }
-        else {
+        } else {
             Log.d("OpenHomework", "Can't open HW05!");
         }
 //        Bundle bundle = new Bundle(); //使用bundle來傳遞資料

@@ -22,6 +22,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_marginStart="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -34,30 +35,53 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <Button
+                android:id="@+id/main_button_hw05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/bule"
+                android:onClick="toHW05"
+                android:text="@string/button_jump_hw05" />
+
+            <Button
+                android:id="@+id/main_button_hw04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="@color/bule"
+                android:onClick="toHW04"
+                android:text="@string/button_jump_hw04" />
+
+            <Button
+                android:id="@+id/main_button_hw03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="@color/bule"
+                android:onClick="toHW03"
+                android:text="@string/button_jump_hw03" />
+
+            <Button
+                android:id="@+id/main_button_hw02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="@color/bule"
+                android:onClick="toHW02"
+                android:text="@string/button_jump_hw02" />
+
+            <Button
+                android:id="@+id/main_button_hw01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:backgroundTint="@color/bule"
+                android:onClick="toHW01"
+                android:text="@string/button_jump_hw01" />
+
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
-
-                <Button
-                    android:id="@+id/main_button_hw05"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="@color/bule"
-                    android:onClick="toHW05"
-                    android:text="@string/button_jump_hw05"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent" />
-
-                <Button
-                    android:id="@+id/main_button_hw4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="15dp"
-                    android:backgroundTint="@color/bule"
-                    android:onClick="toHW04"
-                    android:text="@string/button_jump_hw04"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/main_button_hw05" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

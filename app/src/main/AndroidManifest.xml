@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.105590006_HW">
         <activity android:name=".Homework04"
-            android:label="HW05: Unit tests and Clickable images">
+            android:label="HW04: Activity lifecycle, state and Implicit intents">
             android:label = "Homework04 Activity"
             android:parentActivityName=".MainActivity"> ？父母Activity
             <meta-data
