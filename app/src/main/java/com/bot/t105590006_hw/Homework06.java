@@ -70,7 +70,7 @@ public class Homework06 extends AppCompatActivity {
         return "";
     }
 
-    public void showToast(View view){
+    public void onSubmit(View view){
         String message="";
         message += getString(R.string.hw06_toast_title);
         message += checkCheckBox(box01);

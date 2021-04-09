@@ -63,7 +63,7 @@
                 android:id="@+id/hw06_button_showToast"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="showToast"
+                android:onClick="onSubmit"
                 android:text="@string/hw06_button_showToast" />
         </LinearLayout>
     </ScrollView>
