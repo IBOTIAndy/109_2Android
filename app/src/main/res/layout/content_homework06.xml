@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.bot.t105590006_hw.Homework06"
+    tools:showIn="@layout/activity_homework06">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/hw06_tview_header1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/holo_blue_light"
+                android:text="@string/hw06_textView_header01"
+                android:textColor="@color/black"
+                android:textSize="36sp" />
+
+            <CheckBox
+                android:id="@+id/hw06_checkBox_01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/hw06_checkBox_01" />
+
+            <CheckBox
+                android:id="@+id/hw06_checkBox_02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/hw06_checkBox_02" />
+
+            <CheckBox
+                android:id="@+id/hw06_checkBox_03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/hw06_checkBox_03" />
+
+            <CheckBox
+                android:id="@+id/hw06_checkBox_04"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/hw06_checkBox_04" />
+
+            <CheckBox
+                android:id="@+id/hw06_checkBox_05"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/hw06_checkBox_05" />
+
+            <Button
+                android:id="@+id/hw06_button_showToast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onSubmit"
+                android:text="@string/hw06_button_showToast" />
+
+            <TextView
+                android:id="@+id/hw06_tview_header2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/holo_blue_light"
+                android:text="@string/hw06_textView_header02"
+                android:textColor="@color/black"
+                android:textSize="36sp" />
+
+            <Button
+                android:id="@+id/hw06_button_showDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="showDatePicker"
+                android:text="@string/hw06_button_showDate" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

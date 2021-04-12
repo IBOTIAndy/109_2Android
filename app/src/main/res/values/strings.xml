@@ -1,5 +1,9 @@
 <resources>
-    <string name="app_name">105590006_HW</string>
+    <string name="app_name">105590006_HW6</string>
+    <string name="item_settings">settings</string>
+    <!--log-->
+    <string name="loadSaveState">loading save state.</string>
+    <string name="menuItemDefault">menu item default</string>
     <!--main-->
     <string name="main_titel">Choose a Homework</string>
     <string name="button_jump_hw01">hw01</string>
@@ -7,7 +11,24 @@
     <string name="button_jump_hw03">hw03</string>
     <string name="button_jump_hw04">hw04</string>
     <string name="button_jump_hw05">hw05</string>
+    <string name="button_jump_hw06">hw06</string>
     <!--main end-->
+
+    <!--hw06-->
+    <!-- 04.2: Input controls -->
+    <string name="hw06_textView_header01">Checkboxes_and_etc</string>
+    <string name="hw06_toast_title">holo_EN:</string>
+    <string name="hw06_checkBox_01">Gura</string>
+    <string name="hw06_checkBox_02">Amelia</string>
+    <string name="hw06_checkBox_03">Ina nis</string>
+    <string name="hw06_checkBox_04">Calliope</string>
+    <string name="hw06_checkBox_05">Kiara</string>
+    <string name="hw06_button_showToast">show toast</string>
+    <!-- 04.3: Menus and pickers -->
+    <string name="hw06_textView_header02">Droid Cafe</string>
+    <string name="hw06_button_showDate">Date</string>
+    <string name="hw06_item_shopping_car">Shopping Car</string>
+    <!--hw06 end-->
 
     <!--hw01-->
     <!--hw01 end-->
@@ -95,4 +116,6 @@ Check that the app has the following features:\n<br />
     The LinearLayout orientation is set to horizontal.\n<br />
 
 </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

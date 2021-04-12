@@ -2,22 +2,30 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.bot.t105590006_hw">
 
-    <application
+        <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.105590006_HW">
-        <activity android:name=".Homework04"
-            android:label="HW04: Activity lifecycle, state and Implicit intents">
-            android:label = "Homework04 Activity"
+
+        <!--HW06: Input controls and Menus and pickers-->
+        <activity
+            android:name=".Homework06"
+            android:label="HW06"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            android:label = "Homework06 Activity"
             android:parentActivityName=".MainActivity"> ？父母Activity
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.bot.t105590006_hw.MainActivity" /> <!-- ？指定父母Activity對象 -->
         </activity>
-        <activity android:name=".Homework05"
+
+
+        <!--HW05-->
+        <activity
+            android:name=".Homework05"
             android:label="HW05: Unit tests and Clickable images">
             android:label = "Homework05 Activity"
             android:parentActivityName=".MainActivity"> ？父母Activity
@@ -25,8 +33,19 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.bot.t105590006_hw.MainActivity" /> <!-- ？指定父母Activity對象 -->
         </activity>
-        <activity android:name=".helloToast">
 
+        <!--HW04-->
+        <activity
+            android:name=".Homework04"
+            android:label="HW04: Activity lifecycle, state and Implicit intents">
+            android:label = "Homework04 Activity"
+            android:parentActivityName=".MainActivity"> ？父母Activity
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.bot.t105590006_hw.MainActivity" /> <!-- ？指定父母Activity對象 -->
+        </activity>
+
+        <activity android:name=".helloToast">
             <!--
             android:label = "Hello Toast Activity"
             android:parentActivityName=".MainActivity"> ？父母Activity
