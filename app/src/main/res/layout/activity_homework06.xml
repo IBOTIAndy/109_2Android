@@ -1,115 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-
-
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context="com.bot.t105590006_hw.Homework06">
 
     <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/appbar"
 
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <com.google.android.material.appbar.CollapsingToolbarLayout
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/hw06_toolbar"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:contentScrim="?attr/colorPrimary"
-            app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/design_default_color_primary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:titleTextColor="@color/white" />
 
-            app:toolbarId="@+id/toolbar">
-
-
-            <androidx.appcompat.widget.Toolbar
-                android:id="@+id/hw06_toolbar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/design_default_color_primary"
-                android:minHeight="?attr/actionBarSize"
-                android:theme="?attr/actionBarTheme"
-                app:titleTextColor="@color/white" />
-        </com.google.android.material.appbar.CollapsingToolbarLayout>
     </com.google.android.material.appbar.AppBarLayout>
 
-    <androidx.core.widget.NestedScrollView
+    <include
+        layout="@layout/content_homework06"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-
-
-        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/hw06_tview_header1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:background="@android:color/holo_blue_light"
-                android:text="@string/hw06_textView_header01"
-                android:textColor="@color/black"
-                android:textSize="36sp" />
-
-            <CheckBox
-                android:id="@+id/hw06_checkBox_01"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/hw06_checkBox_01" />
-
-            <CheckBox
-                android:id="@+id/hw06_checkBox_02"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/hw06_checkBox_02" />
-
-            <CheckBox
-                android:id="@+id/hw06_checkBox_03"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/hw06_checkBox_03" />
-
-            <CheckBox
-                android:id="@+id/hw06_checkBox_04"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/hw06_checkBox_04" />
-
-            <CheckBox
-                android:id="@+id/hw06_checkBox_05"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/hw06_checkBox_05" />
-
-            <Button
-                android:id="@+id/hw06_button_showToast"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="onSubmit"
-                android:text="@string/hw06_button_showToast" />
-
-            <TextView
-                android:id="@+id/hw06_tview_header2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:background="@android:color/holo_blue_light"
-                android:text="@string/hw06_textView_header02"
-                android:textColor="@color/black"
-                android:textSize="36sp" />
-
-            <Button
-                android:id="@+id/hw06_button_showDate"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="showDatePicker"
-                android:text="@string/hw06_button_showDate" />
-        </LinearLayout>
-    </androidx.core.widget.NestedScrollView>
+        android:layout_height="wrap_content" />
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

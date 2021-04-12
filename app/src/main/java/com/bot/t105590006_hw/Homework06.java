@@ -1,7 +1,9 @@
 package com.bot.t105590006_hw;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.CheckBox;
@@ -39,23 +41,6 @@ public class Homework06 extends AppCompatActivity {
         actionBar.setDisplayShowTitleEnabled(true); //顯示titel
         actionBar.setHomeButtonEnabled(true);   //
 
-        toolbar.inflateMenu(R.menu.menu_homework06);    //指定使用哪個menu
-        toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {  //設定一系列當menu item被按下時的反應
-            @Override
-            public boolean onMenuItemClick(MenuItem item) {
-                switch (item.getItemId()){  //被選到的item id
-                    case R.id.hw06_item_shopping_car:
-                        //要做的事
-                        return true;
-                    case R.id.hw06_item_settings:
-                        Toast toast;
-                        return true;
-                    default:
-                        Log.d(this.getClass().getName(), getString(R.string.menuItemDefault));
-                }
-                return Homework06.super.onOptionsItemSelected(item);    //還不知道這行的用處
-            }
-        });
         if(savedInstanceState != null){
             Log.d(this.getClass().getName(), getString(R.string.loadSaveState));
             boxLoad(box01, savedInstanceState.getString("box01"));
@@ -65,6 +50,42 @@ public class Homework06 extends AppCompatActivity {
             boxLoad(box05, savedInstanceState.getString("box05"));
         }
     }
+
+    /**
+     * Inflates the menu, and adds items to the action bar if it is present.
+     *
+     * @param menu Menu to inflate.
+     * @return Returns true if the menu inflated.
+     */
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_homework06, menu);
+        return true;
+    }
+
+    /**
+     * Handles app bar item clicks.
+     *
+     * @param item Item clicked.
+     * @return True if one of the defined items was clicked.
+     */
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.hw06_item_shopping_car:
+                displayToast("shopping car hi");
+                return true;
+            case R.id.hw06_item_settings:
+                displayToast("setting waiting create");
+                return true;
+            default:
+                // Do nothing
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
     private void boxLoad(CheckBox box, String saveState){
         if(saveState == "true") {
             box.setSelected(true);
@@ -112,6 +133,10 @@ public class Homework06 extends AppCompatActivity {
     /* 04.2: Input controls end */
 
     /* 04.3: Menus and pickers */
+    public void displayToast(String message) {
+        Toast.makeText(getApplicationContext(), message, Toast.LENGTH_SHORT).show();
+    }
+
     public void processDatePickerResult(int year, int month, int day){
         String month_string = Integer.toString(month + 1);  //因為month的一月是0 所以要+1
         String day_string = Integer.toString(day);
