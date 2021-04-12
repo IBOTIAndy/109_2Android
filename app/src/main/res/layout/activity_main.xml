@@ -36,7 +36,7 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/main_button_hw"
+                android:id="@+id/main_button_hw06"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/bule"

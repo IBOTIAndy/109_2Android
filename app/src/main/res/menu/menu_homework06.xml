@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/hw06_item_shopping_car"
+        android:icon="@drawable/ic_hw06_shopping_car"
+        android:title="@string/hw06_item_shopping_car"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/hw06_item_settings"
+        android:title="@string/item_settings"
+        app:showAsAction="never"/>
+</menu>

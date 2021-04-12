@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.bot.t105590006_hw">
 
-    <application
+        <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -10,16 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.105590006_HW">
 
-        <!--HW06-->
+        <!--HW06: Input controls and Menus and pickers-->
         <activity
             android:name=".Homework06"
-            android:label="HW06: Input controls and Menus and pickers">
+            android:label="HW06"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             android:label = "Homework06 Activity"
             android:parentActivityName=".MainActivity"> ？父母Activity
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.bot.t105590006_hw.MainActivity" /> <!-- ？指定父母Activity對象 -->
         </activity>
+
 
         <!--HW05-->
         <activity

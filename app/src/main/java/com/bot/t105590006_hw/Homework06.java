@@ -1,9 +1,12 @@
 package com.bot.t105590006_hw;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.Toast;
@@ -27,6 +30,31 @@ public class Homework06 extends AppCompatActivity {
         box03 = (CheckBox)findViewById(R.id.hw06_checkBox_03);
         box04 = (CheckBox)findViewById(R.id.hw06_checkBox_04);
         box05 = (CheckBox)findViewById(R.id.hw06_checkBox_05);
+        /*04.3: Menus and pickers*/
+        Toolbar toolbar = findViewById(R.id.hw06_toolbar);
+        setSupportActionBar(toolbar);
+        ActionBar actionBar = getSupportActionBar();    //取得manifests內的xml設定
+        actionBar.setDisplayHomeAsUpEnabled(true);      //設定返回按鈕(顯示(display)返回home(home_as_up)啟用(enabled))
+        actionBar.setDisplayShowTitleEnabled(true); //顯示titel
+        actionBar.setHomeButtonEnabled(true);   //
+
+        toolbar.inflateMenu(R.menu.menu_homework06);    //指定使用哪個menu
+        toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {  //設定一系列當menu item被按下時的反應
+            @Override
+            public boolean onMenuItemClick(MenuItem item) {
+                switch (item.getItemId()){  //被選到的item id
+                    case R.id.hw06_item_shopping_car:
+                        //要做的事
+                        return true;
+                    case R.id.hw06_item_settings:
+                        Toast toast;
+                        return true;
+                    default:
+                        Log.d(this.getClass().getName(), getString(R.string.menuItemDefault));
+                }
+                return Homework06.super.onOptionsItemSelected(item);    //還不知道這行的用處
+            }
+        });
         if(savedInstanceState != null){
             Log.d(this.getClass().getName(), getString(R.string.loadSaveState));
             boxLoad(box01, savedInstanceState.getString("box01"));

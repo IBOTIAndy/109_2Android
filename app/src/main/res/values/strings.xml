@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">105590006_HW6</string>
+    <string name="item_settings">settings</string>
+    <!--log-->
     <string name="loadSaveState">loading save state.</string>
+    <string name="menuItemDefault">menu item default</string>
     <!--main-->
     <string name="main_titel">Choose a Homework</string>
     <string name="button_jump_hw01">hw01</string>
@@ -12,6 +15,7 @@
     <!--main end-->
 
     <!--hw06-->
+    <!-- 04.2: Input controls -->
     <string name="hw06_textView_header01">Checkboxes_and_etc</string>
     <string name="hw06_toast_title">holo_EN:</string>
     <string name="hw06_checkBox_01">Gura</string>
@@ -20,6 +24,9 @@
     <string name="hw06_checkBox_04">Calliope</string>
     <string name="hw06_checkBox_05">Kiara</string>
     <string name="hw06_button_showToast">show toast</string>
+    <!-- 04.3: Menus and pickers -->
+    <string name="hw06_textView_header02">Droid Cafe</string>
+    <string name="hw06_item_shopping_car">Shopping Car</string>
     <!--hw06 end-->
 
     <!--hw01-->
