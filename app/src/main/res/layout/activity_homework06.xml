@@ -101,6 +101,13 @@
                 android:text="@string/hw06_textView_header02"
                 android:textColor="@color/black"
                 android:textSize="36sp" />
+
+            <Button
+                android:id="@+id/hw06_button_showDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="showDatePicker"
+                android:text="@string/hw06_button_showDate" />
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 

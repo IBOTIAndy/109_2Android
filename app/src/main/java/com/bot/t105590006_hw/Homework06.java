@@ -1,15 +1,16 @@
 package com.bot.t105590006_hw;
 
-import androidx.appcompat.app.ActionBar;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.Toast;
+
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.fragment.app.DialogFragment;
 
 public class Homework06 extends AppCompatActivity {
     /* 04.2: Input controls */
@@ -109,4 +110,12 @@ public class Homework06 extends AppCompatActivity {
         Toast.makeText(this, message, Toast.LENGTH_LONG).show();
     }
     /* 04.2: Input controls end */
+
+    /* 04.3: Menus and pickers */
+    public void showDatePicker(View view){
+        DialogFragment newFragment = new DatePickerFragment();
+        newFragment.show(getSupportFragmentManager(), "datePicker");
+        Toast toast;
+    }
+    /* 04.3: Menus and pickers end */
 }

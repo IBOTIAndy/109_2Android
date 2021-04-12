@@ -26,6 +26,7 @@
     <string name="hw06_button_showToast">show toast</string>
     <!-- 04.3: Menus and pickers -->
     <string name="hw06_textView_header02">Droid Cafe</string>
+    <string name="hw06_button_showDate">Date</string>
     <string name="hw06_item_shopping_car">Shopping Car</string>
     <!--hw06 end-->
 
@@ -115,4 +116,6 @@ Check that the app has the following features:\n<br />
     The LinearLayout orientation is set to horizontal.\n<br />
 
 </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
