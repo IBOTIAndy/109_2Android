@@ -112,6 +112,14 @@ public class Homework06 extends AppCompatActivity {
     /* 04.2: Input controls end */
 
     /* 04.3: Menus and pickers */
+    public void processDatePickerResult(int year, int month, int day){
+        String month_string = Integer.toString(month + 1);  //因為month的一月是0 所以要+1
+        String day_string = Integer.toString(day);
+        String year_string = Integer.toString(year);
+        String dateMessage = (year_string + "/" + month_string + "/" + day_string);
+        Toast.makeText(this, "Date: " + dateMessage, Toast.LENGTH_SHORT).show();
+    }
+
     public void showDatePicker(View view){
         DialogFragment newFragment = new DatePickerFragment();
         newFragment.show(getSupportFragmentManager(), "datePicker");
