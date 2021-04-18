@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">105590006_HW6</string>
+    <string name="app_name">105590006_HW7</string>
     <string name="item_settings">settings</string>
     <!--log-->
     <string name="loadSaveState">loading save state.</string>
@@ -12,7 +12,17 @@
     <string name="button_jump_hw04">hw04</string>
     <string name="button_jump_hw05">hw05</string>
     <string name="button_jump_hw06">hw06</string>
+    <string name="button_jump_hw07">hw07</string>
     <!--main end-->
+
+    <!--hw07-->
+    <string name="hw07_tabLayout_left">Top stories</string>
+    <string name="hw07_tabLayout_mid">Tech news</string>
+    <string name="hw07_tabLayout_right">Cooking</string>
+    <string name="hw07_tab_text1">These are the top stories: </string>
+    <string name="hw07_tab_text2">Tech news you can use: </string>
+    <string name="hw07_tab_text3">Cooking tips: </string>
+    <!--hw07 end-->
 
     <!--hw06-->
     <!-- 04.2: Input controls -->

@@ -102,6 +102,15 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    public void toHW07(View view) {
+        Intent intent = new Intent(this, Homework07.class); //指定要切換的activity給intent
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);
+        } else {
+            Log.d("OpenHomework", "Can't open HW04!");
+        }
+    }
+
     //查看各個狀態
     public void onStart(){
         super.onStart();
